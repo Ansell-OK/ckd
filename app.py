@@ -74,8 +74,8 @@ def login_redirect():
 def register_page():
     return render_template('register.html')
 
-@app.route('/register_me', methods=['POST'])
-def login_redirect():
+@app.route('/registerme', methods=['POST'])
+def register_redirect():
     return redirect(url_for('home_page'))
 
 @app.route('/home')
